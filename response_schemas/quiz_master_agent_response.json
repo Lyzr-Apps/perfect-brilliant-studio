@@ -1,0 +1,46 @@
+{
+  "agent_name": "Quiz Master Agent",
+  "agent_id": "698dbc8958f2926d8bc39f93",
+  "description": "Generates trivia questions based on selected category and difficulty, evaluates user answers, provides correct answer explanations, tracks score and streak, and delivers engaging quiz experience",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "question_text": "string",
+    "options": [
+      {
+        "label": "string",
+        "text": "string"
+      }
+    ],
+    "question_number": "number",
+    "is_correct": "boolean",
+    "correct_answer": "string",
+    "explanation": "string",
+    "current_score": "number",
+    "current_streak": "number",
+    "best_streak": "number",
+    "final_score": "number",
+    "accuracy_percentage": "number",
+    "quiz_complete": "boolean"
+  },
+  "example_response": {
+    "question_text": "sample string",
+    "options": [
+      {
+        "label": "sample string",
+        "text": "sample string"
+      }
+    ],
+    "question_number": 0,
+    "is_correct": false,
+    "correct_answer": "sample string",
+    "explanation": "sample string",
+    "current_score": 0,
+    "current_streak": 0,
+    "best_streak": 0,
+    "final_score": 0,
+    "accuracy_percentage": 0,
+    "quiz_complete": false
+  }
+}

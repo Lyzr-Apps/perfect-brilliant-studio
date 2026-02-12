@@ -1,0 +1,33 @@
+{
+  "workflow_name": "Trivia Quest",
+  "workflow_type": "single_agent",
+  "agents": [
+    {
+      "name": "Quiz Master Agent",
+      "agent_id": "698dbc8958f2926d8bc39f93",
+      "type": "text",
+      "provider": "perplexity",
+      "model": "sonar-reasoning-pro",
+      "response_schema_file": "response_schemas/quiz_master_agent_response.json"
+    }
+  ],
+  "workflow_nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Selects Category & Difficulty"
+    },
+    {
+      "id": "quiz_master_agent",
+      "type": "Agent",
+      "label": "Quiz Master Agent",
+      "agent_id": "698dbc8958f2926d8bc39f93"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Quiz Results"
+    }
+  ],
+  "created_at": "2026-02-12T00:00:00Z"
+}
